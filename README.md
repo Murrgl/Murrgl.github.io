@@ -1,5 +1,5 @@
 # Class Website for CSCI-712
-Here you'll find my submissions for Computer Animation.
-On this website, there are links to each assignment that I've completed.
+
+On the main website [https://murrgl.github.io/] there are links to each assignment I've completed.
 
 Thanks for visiting.
