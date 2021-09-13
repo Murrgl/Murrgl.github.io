@@ -3,8 +3,10 @@
  * Michael Walia - mpw2217
  */
 
+//As per instructions of assignment #0, the duration is 20 seconds.
+//Furthermore, rotation around the Y-axis is 18t [t meaning seconds] in degrees.
 const CANVAS_SIZE = 500;
-const DURATION = 20; // 20sec animation
+const DURATION = 20;
 const ROTATION = 2 * Math.PI;
 
 // Creating the scene, camera, and renderer.
@@ -15,7 +17,6 @@ renderer.setSize(CANVAS_SIZE, CANVAS_SIZE);
 document.body.appendChild(renderer.domElement);
 
 const geometry = new THREE.BoxGeometry(1, 1, 1);
-const geometry = new THREE.
 const material = new THREE.MeshPhongMaterial({ color: 0xff0000 });
 const cube = new THREE.Mesh(geometry, material);
 const light = new THREE.DirectionalLight(0xffffff, 1);
@@ -44,7 +45,7 @@ function main(obj) {
         requestAnimationFrame(render);
         renderer.render(scene, camera);
     }
-    // Fix shape stretching
+    // Here I'm trying to influence the shape stretching.
     const canvas = renderer.domElement;
     camera.aspect = canvas.clientWidth / canvas.clientHeight;
     camera.updateProjectionMatrix();
