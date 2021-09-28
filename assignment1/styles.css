@@ -1,0 +1,16 @@
+/*
+ * CSCI-712 Assignment #1: Keyframing
+ * Michael Walia - mpw2217
+ */
+* {
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
