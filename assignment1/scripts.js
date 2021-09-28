@@ -59,7 +59,7 @@ camera.position.copy(new THREE.Vector3(17, 6, 42));
 const clock = new THREE.Clock();
 
 function renderingKeyframeBox(object) {
-    function render(render) {
+    function render(rendobj) {
         const time = clock.getElapsedTime();
         if (time > KEYFRAMES[KEYFRAMES.length - 1].time) return;
 
