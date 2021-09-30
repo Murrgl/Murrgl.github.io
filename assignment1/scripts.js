@@ -3,20 +3,6 @@
  * Michael Walia - mpw2217
  */
 
-// These are the values given from class.
-const KEYFRAMES = [
-    new Keyframe(0, 0.0, 0.0, 0.0, 1.0, 1.0, -1.0, 0.0),
-    new Keyframe(1, 4.0, 0.0, 0.0, 1.0, 1.0, -1.0, 30.0),
-    new Keyframe(2, 8.0, 0.0, 0.0, 1.0, 1.0, -1.0, 90.0),
-    new Keyframe(3, 12.0, 12.0, 12.0, 1.0, 1.0, -1.0, 180.0),
-    new Keyframe(4, 12.0, 18.0, 18.0, 1.0, 1.0, -1.0, 270.0),
-    new Keyframe(5, 18.0, 18.0, 18.0, 0.0, 1.0, 0.0, 90.0),
-    new Keyframe(6, 18.0, 18.0, 18.0, 0.0, 0.0, 1.0, 90.0),
-    new Keyframe(7, 25.0, 12.0, 12.0, 1.0, 0.0, 0.0, 0.0),
-    new Keyframe(8, 25.0, 0.0, 18.0, 1.0, 0.0, 0.0, 0.0),
-    new Keyframe(9, 25.0, 1.0, 18.0, 1.0, 0.0, 0.0, 0.0),
-];
-
 // This KeyFrame class helps us use the time, x, y, xa, ya, za, and theta values to animate the box object.
 class Keyframe {
     constructor(time, x, y, z, xa, ya, za, theta) {
@@ -30,6 +16,20 @@ class Keyframe {
         this.theta = theta;
     }
 }
+
+// These are the values given from class.
+const KEYFRAMES = [
+    new Keyframe(0, 0.0, 0.0, 0.0, 1.0, 1.0, -1.0, 0.0),
+    new Keyframe(1, 4.0, 0.0, 0.0, 1.0, 1.0, -1.0, 30.0),
+    new Keyframe(2, 8.0, 0.0, 0.0, 1.0, 1.0, -1.0, 90.0),
+    new Keyframe(3, 12.0, 12.0, 12.0, 1.0, 1.0, -1.0, 180.0),
+    new Keyframe(4, 12.0, 18.0, 18.0, 1.0, 1.0, -1.0, 270.0),
+    new Keyframe(5, 18.0, 18.0, 18.0, 0.0, 1.0, 0.0, 90.0),
+    new Keyframe(6, 18.0, 18.0, 18.0, 0.0, 0.0, 1.0, 90.0),
+    new Keyframe(7, 25.0, 12.0, 12.0, 1.0, 0.0, 0.0, 0.0),
+    new Keyframe(8, 25.0, 0.0, 18.0, 1.0, 0.0, 0.0, 0.0),
+    new Keyframe(9, 25.0, 1.0, 18.0, 1.0, 0.0, 0.0, 0.0),
+];
 
 const CANVAS_SIZE = 500;
 
