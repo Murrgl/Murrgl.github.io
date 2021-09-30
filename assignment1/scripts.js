@@ -44,7 +44,7 @@ document.body.appendChild(renderer.domElement);
 
 //Sets up the object's shape, it's material,
 const geometry = new THREE.BoxGeometry(4, 4, 4);
-const material = new THREE.MeshBasicMaterial({color: 0xff0000, wireframe: true});
+const material = new THREE.MeshPhongMaterial({color: 0xff0000, wireframe: false});
 const boxObject = new THREE.Mesh(geometry, material);
 const light = new THREE.DirectionalLight(0xffffff, 1);
 light.position.set(-1, 2, 4);
