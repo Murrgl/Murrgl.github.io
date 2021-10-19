@@ -1,6 +1,7 @@
 /*
  * CSCI-712 Assignment #2: Billiards
  * Michael Walia - mpw2217
+ * Version: Alpha
  */
 
 const POOLTABLE_SIZE = 800;
