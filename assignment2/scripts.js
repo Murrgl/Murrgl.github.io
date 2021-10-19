@@ -27,12 +27,12 @@ var renderer = new THREE.WebGLRenderer({
 });
 
 renderer.setSize(POOLTABLE_SIZE, POOLTABLE_SIZE);
-renderer.setClearColor(0x4eb0e3);
+renderer.setClearColor(0x7a7a7a);
 document.body.appendChild(renderer.domElement);
 
 // Generating the table here...
 const TABLE_GEOMETRY = new THREE.BoxGeometry(4, 0.2, 2);
-const TABLE_MATERIAL = new THREE.MeshPhongMaterial({ color: 0x55ff55 });
+const TABLE_MATERIAL = new THREE.MeshPhongMaterial({ color: 0x00633F }); //Emerald
 const TABLE = new THREE.Mesh(TABLE_GEOMETRY, TABLE_MATERIAL);
 scene.add(TABLE);
 
@@ -41,7 +41,7 @@ const cushions = new THREE.Group();
 
 const longCushionGeo = new THREE.BoxGeometry(4.2, 0.2, 0.1);
 const shortCushionGeo = new THREE.BoxGeometry(0.1, 0.2, 2);
-const cushionMat = new THREE.MeshPhongMaterial({ color: 0x22aa22 });
+const cushionMat = new THREE.MeshPhongMaterial({ color: 0x93633F }); //Mahogany
 
 const longCushionFar = new THREE.Mesh(longCushionGeo, cushionMat);
 longCushionFar.position.z = -1.05;
@@ -121,11 +121,11 @@ scene.add(pockets);
 
 // Setting up the light parameters.
 const overheadLight = new THREE.PointLight(0xffffff, 1);
-overheadLight.position.set(0, 2, 0);
+overheadLight.position.set(0, 3.5, 0);
 scene.add(overheadLight);
 
 // Setting up the camera parameters.
-var camera = new THREE.PerspectiveCamera(70, 1);
+var camera = new THREE.PerspectiveCamera(65, 1);
 camera.position.copy(new THREE.Vector3(0, 3, 3));
 camera.lookAt(TABLE.position);
 
