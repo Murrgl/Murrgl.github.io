@@ -7,8 +7,8 @@
 const POOLTABLE_SIZE = 800;
 const BALL_RADIUS = 0.06;
 const BALL_MASS = 170;
-let COEFFICIENT_RESTITUTION = 0.5;
-let COEFFICIENT_FRICTION = 0.04;
+let COEFFICIENT_RESTITUTION = 0.90;
+let COEFFICIENT_FRICTION = 0.004;
 
 $(document).ready(() => {
     $("#ball-cushion").on("input change", (e) => {
